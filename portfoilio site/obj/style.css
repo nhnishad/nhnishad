@@ -1,0 +1,251 @@
+/*=============== Basic Area ===============*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,500;1,700&display=swap');
+
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(Ragshie.woff);
+}
+
+@font-face {
+  font-family: Glancyr;
+  src: url(Glancyr.ttf);
+}
+
+@font-face {
+  font-family: Ivy Presto Display;
+  src: url(Ivy\ Presto\ Display.ttf);
+}
+
+@font-face {
+  font-family: Ivy Presto Displa;
+  src: url(Ivy\ Presto\ Display-normal.ttf);
+}
+
+
+
+/*============= Fix =============*/
+
+
+header #full_menu ul #image img {
+  margin: 0 auto;
+}
+
+a.home-link,
+div.blog-feeds,
+.post-title {
+  display: none;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1000px;
+}
+
+img {
+  pointer-events: none;
+}
+
+/*============= Fix End =============*/
+
+/*============= Fonts Area End =============*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: 'Space Grotesk', sans-serif;
+  user-select: none;
+}
+
+:root {
+  --primary: #b5f7f2;
+}
+
+::-moz-selection {
+  background: var(--primary);
+  color: #333;
+}
+
+::selection {
+  background: var(--primary);
+  color: #333;
+  text-shadow: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fcfcfc;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #222;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+body {
+  background: #000;
+  color: #fff;
+  --dot-bg: black;
+  --dot-color: rgb(22, 97, 87, 1);
+  --dot-size: 1.5px;
+  --dot-space: 35px;
+  background:
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+  overflow: hidden;
+}
+
+
+
+.circle {
+	--circle-size: 45px;
+	position: fixed;
+	height: var(--circle-size);
+	width: var(--circle-size);
+	border: 1px solid white;
+	border-radius: 100%;
+	top: calc(var(--circle-size) / 2 * -1);
+	left: calc(var(--circle-size) / 2 * -1);
+	pointer-events: none;
+  z-index: 999999999999;
+}
+
+/* Pre loader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: hsla(175, 100%, 7%, 1);
+
+  background: linear-gradient(90deg, hsla(175, 100%, 7%, 1) 0%, hsla(175, 77%, 22%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(175, 100%, 7%, 1) 0%, hsla(175, 77%, 22%, 1) 100%);
+
+  background: -webkit-linear-gradient(90deg, hsla(175, 100%, 7%, 1) 0%, hsla(175, 77%, 22%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#002623", endColorstr="#0D655D", GradientType=1);
+  z-index: 9999999999999999999999999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#preloader .darksoul-layout {
+  margin: auto;
+  display: flex;
+  width: 250px;
+}
+
+#preloader .darksoul-grid {
+  margin: auto;
+  margin-right: 1px;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  gap: 0px;
+  grid-template-columns: auto auto;
+  animation: preloader 2s linear 0s infinite;
+}
+
+#preloader .item1 {
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  border-radius: 0%;
+  background-color: rgb(255, 255, 255);
+}
+
+#preloader .item2 {
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  border-radius: 0%;
+  background-color: rgb(255, 255, 255);
+}
+
+#preloader .item3 {
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  border-radius: 0%;
+  background-color: rgb(255, 255, 255);
+}
+
+#preloader .item4 {
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  border-radius: 0%;
+  background-color: rgb(255, 255, 255);
+}
+
+@keyframes preloader {
+  0% {
+    rotate: 0deg;
+    transform: scale(0.6);
+  }
+
+  50% {
+    rotate: 100deg;
+    transform: scale(0.4);
+  }
+
+  100% {
+    rotate: 360deg;
+    transform: scale(0.6);
+  }
+}
+
+#preloader .darksoul-loader-h {
+  margin: auto;
+  margin-left: 5px;
+}
+
+
+.preloadBody{
+  overflow: hidden;
+  height: 70vh;
+}
+
