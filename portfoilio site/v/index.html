@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet"
+    href="https://cdn.statically.io/gh/paulirish/lite-youtube-embed/f9fc3a2475ade166d0cf7bb3e3caa3ec236ee74e/src/lite-yt-embed.css">
+  <script
+    src="https://cdn.statically.io/gh/nhnishad/api/333ef9f48fe6373263a9740b5f57d7d3e99c83fd/lite-yt-embed.js"></script>
+</head>
+<body>
+
+    <div id="noise"></div>
+
+    
+
+    <div class="container">
+      
+        <header>
+            <h1>Video Editing Portfolio</h1>
+            <p>NH Nishad</p>
+            <img src="line2.png">
+        </header>
+        <div class="button-container">
+            <button onclick="filterVideos('all')">All</button>
+            <button onclick="filterVideos('long')">Long Video</button>
+            <button onclick="filterVideos('short')">Shorts</button>
+        </div>
+        <div class="gallery">
+            <!-- 16:9 Wide Videos -->
+            <div class="card wide-16-9" data-type="long">
+                <a data-fancybox="gallery">
+                    <div class="video-wrapper">
+                        <lite-youtube videoid="S_MoNcvewMg"></lite-youtube>
+                    </div>
+                </a>
+                <div class="label">Video Editing x Graphic Design Showreell 2023</div>
+            </div>
+            <div class="card wide-16-9" data-type="long">
+                <a data-fancybox="gallery">
+                    <div class="video-wrapper">
+                        <lite-youtube videoid="LHNaX-lT-q4" params="controls=1"></lite-youtube>
+                    </div>
+                </a>
+                <div class="label">Documentry Style Editing</div>
+            </div>
+            <div class="card wide-16-9" data-type="long">
+                <a data-fancybox="gallery">
+                    <div class="video-wrapper">
+                        <lite-youtube videoid="G_OyKdn59Ds" params="controls=1"></lite-youtube>
+                    </div>
+                </a>
+                <div class="label">Travel Vlog Editing</div>
+            </div>
+            <div class="card wide-16-9" data-type="long">
+                <a data-fancybox="gallery">
+                    <div class="video-wrapper">
+                        <lite-youtube videoid="i4cBzyOmz0k" params="controls=1"></lite-youtube>
+                    </div>
+                </a>
+                <div class="label">Documentry Vlog Editing</div>
+            </div>
+            <div class="card wide-16-9" data-type="long">
+                <a data-fancybox="gallery">
+                    <div class="video-wrapper">
+                    <iframe src="https://drive.google.com/file/d/1V33TJJDpyK2tsVcbu3f26a5c5AJQxuAW/preview"></iframe>
+                    </div>
+                </a>
+                <div class="label">Advertise Video Editing</div>
+            </div>
+            <div class="card wide-16-9" data-type="long">
+                <a data-fancybox="gallery">
+                    <div class="video-wrapper">
+                        <iframe src="https://drive.google.com/file/d/1mrUq-TydLKEq71r9pUtsPy7G6GYMSjMv/preview"
+            allowfullscreen></iframe>
+                    </div>
+                </a>
+                <div class="label">Travel Vlog Video Editing</div>
+            </div>
+            
+            <!-- Repeat wide 16:9 cards with different VIDEO_IDs and labels -->
+        
+            <!-- 5:4 Wide Videos -->
+            <div class="card wide-5-4" data-type="short">
+                <a data-fancybox="gallery">
+                    <div class="video-wrapper">
+                        <lite-youtube videoid="u3pSEXDubzI"></lite-youtube>
+                    </div>
+                </a>
+                <div class="label">Shorts Before After</div>
+            </div>
+            
+            <div class="card wide-5-4" data-type="short">
+                <a data-fancybox="gallery">
+                    <div class="video-wrapper">
+                        <lite-youtube videoid="tV-a5V8sPFU"></lite-youtube>
+                    </div>
+                </a>
+                <div class="label"> I re-edited one of sohag360's videos.</div>
+            </div>
+            
+            <!-- Repeat wide 5:4 cards with different VIDEO_IDs and labels -->
+        
+            <!-- Vertical Videos -->
+            <div class="card vertical" data-type="short">
+                <a data-fancybox="gallery">
+                    <div class="video-wrapper">
+                        <lite-youtube videoid="CoXqhhlaB20"></lite-youtube>
+                    </div>
+                </a>
+                <div class="label">Informative Shorts</div>
+            </div>
+            <div class="card vertical" data-type="short">
+                <a data-fancybox="gallery">
+                    <div class="video-wrapper">
+                        <lite-youtube videoid="cGKEe_P1sJQ"></lite-youtube>
+                    </div>
+                </a>
+                <div class="label">Fasion Brand Shorts</div>
+            </div>
+            <div class="card vertical" data-type="short">
+                <a data-fancybox="gallery">
+                    <div class="video-wrapper">
+                        <lite-youtube videoid="YzCIqPIxWGE"></lite-youtube>
+                    </div>
+                </a>
+                <div class="label">Informative Shorts Re-created</div>
+            </div>
+            <div class="card vertical" data-type="short">
+                <a data-fancybox="gallery">
+                    <div class="video-wrapper">
+                        <lite-youtube videoid="8kqFKzUO7Eo"></lite-youtube>
+                    </div>
+                </a>
+                <div class="label">Informative Shorts Re-created</div>
+            </div>
+            <div class="card vertical" data-type="short">
+                <a data-fancybox="gallery">
+                    <div class="video-wrapper">
+                        <lite-youtube videoid="RbAKTFGtFI8"></lite-youtube>
+                    </div>
+                </a>
+                <div class="label">Informative Shorts Re-created</div>
+            </div>
+            <div class="card vertical" data-type="short">
+                <a data-fancybox="gallery">
+                    <div class="video-wrapper">
+                        <lite-youtube videoid="kgjEczfq17s"></lite-youtube>
+                    </div>
+                </a>
+                <div class="label">Shorts Video Editing</div>
+            </div>
+            <!-- Repeat vertical cards with different VIDEO_IDs and labels -->
+        </div>
+        
+    </div>
+<script src="script.js"></script>
+</body> 
+</html>

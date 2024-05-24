@@ -1,0 +1,148 @@
+/* Responsive Styles */
+
+/* Tablets and larger smartphones */
+@media (max-width: 1024px) {
+
+    .card.wide-16-9,
+    .card.wide-5-4 {
+        width: calc(50% - 20px);
+    }
+
+    .card.vertical {
+        width: calc(33.333% - 20px);
+    }
+
+    .card .video-wrapper {
+        padding-bottom: 60%;
+        /* Increase video height for better viewing */
+    }
+
+    .card.wide-16-9 .video-wrapper {
+        padding-bottom: 60%;
+        /* Adjust video height for better viewing */
+    }
+
+    .card.wide-5-4 .video-wrapper {
+        padding-bottom: 100%;
+        /* Adjust 5:4 ratio video height for better viewing */
+    }
+
+    .card.vertical .video-wrapper {
+        padding-bottom: 175;
+        /* Adjust vertical video aspect ratio */
+    }
+}
+
+/* Small tablets and smartphones */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .card.wide-16-9,
+    .card.wide-5-4 {
+        width: calc(100% - 20px);
+    }
+
+    .card.vertical {
+        width: calc(50% - 20px);
+    }
+
+    .card .video-wrapper {
+        padding-bottom: 56.25%;
+        /* Revert to 16:9 ratio */
+    }
+
+    .card.wide-16-9 .video-wrapper {
+        padding-bottom: 56.25%;
+        /* Revert to 16:9 ratio */
+    }
+
+    .card.wide-5-4 .video-wrapper {
+        padding-bottom: 80%;
+        /* 5:4 ratio for wide videos */
+    }
+
+    .card.vertical .video-wrapper {
+        padding-bottom: 175%;
+        /* Adjust vertical video aspect ratio */
+    }
+}
+
+
+
+
+/* Small smartphones */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .card.wide-16-9,
+    .card.wide-5-4,
+    .card.vertical {
+        width: 100%;
+    }
+
+    .card .video-wrapper {
+        padding-bottom: 60%;
+        /* Increase video height for better viewing */
+    }
+
+    .card.wide-16-9 .video-wrapper {
+        padding-bottom: 60%;
+        /* Adjust video height for better viewing */
+    }
+
+    .card.wide-5-4 .video-wrapper {
+        padding-bottom: 100%;
+        /* Adjust 5:4 ratio video height for better viewing */
+    }
+
+    .card.vertical .video-wrapper {
+        padding-bottom: 180%;
+        /* Adjust vertical video aspect ratio */
+    }
+
+    .card {
+        border-radius: 5px;
+    }
+
+    body{
+    padding: 10px
+    }
+
+header img{
+    width: 400px;
+}
+
+header {
+    padding: 10px 0;
+}
+
+}
+
+@media (max-width: 400px) {
+header h1 {
+    font-size: 1.2rem;
+}
+
+
+.button-container button{
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+header img{
+    width: 300px;
+}
+}
